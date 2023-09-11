@@ -3,13 +3,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
 }
 html {
     scroll-behavior: smooth;
 }
 /* header */
-
 button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -32,6 +30,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10px;
+    margin: 0 50px;
 }
 
 .logo {
@@ -61,7 +60,8 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: #054bb4;
+    color: #ffffff;
+    background-color: #e14177;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -70,4 +70,33 @@ button {
 
 button:hover {
     background-color: #235391;
+}
+.section-hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 50px;
+}
+.section-hero-left {
+    /*background-color: aqua;*/
+}
+.section-hero-text {
+    max-width: 500px;
+    
+}
+.section-hero-text h1 {
+    color: black;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: sans-serif;
+}
+.section-hero-text p {
+    color: #5d6169;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+.common-btn {
+margin-left: 0;
+margin-top:30px ;
 }
