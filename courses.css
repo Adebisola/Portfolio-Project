@@ -223,6 +223,14 @@ header {
     color:#e14177;
   }
 
+  .view-course .btn {
+    background-color: #e14177;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+  }
+
 
 
 
