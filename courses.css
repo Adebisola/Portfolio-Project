@@ -72,120 +72,168 @@ header {
     color: #054bb4;
 }
 
-/* contact */
-.hero {
-    height: 100%;
-    margin: 30px 70px;
-    /*  using linear gradient because we will add one layer over the background image */
+
+/* Courses  1 */
+
+.container {
+    margin: 0px 70px;
+}
+.section-header {
+    text-align: center;
+}
+.section-title {
+    color: black;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800px;
+}
+
+.section-tagline {
+    color: #030303;
+    line-height: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+}
+
+.row{
+    margin-top: 30px;
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /*background-color: #e14177;*/
+}
+.card {
+    background-color: /*#fffefe*/ #fcfcfc;
+    margin: 10px;
+
+
+}
+
+
+.card-img img {
+    width:350px;
+    height:350px;
+    transition: all 1s;
+
+}
+.card-img img:hover {
+    transform: scale(1.2);
+}
+
+.card-text h2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800px;
+}
+
+.card-text {
+    background-color: #ffffff;
+}
+.card-text button {
     font-family: "Montserrat", sans-serif;
-    
-}
-
-.form-box {
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
-    overflow: hidden;
-    font-size: 16px;
-}
-
-.button-box {
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #d1c7cb;
-    border-radius: 30px;
-}
-
-.toggle-btn {
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-
-#btn {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background: linear-gradient(to right, #054bb4, #2e578d);
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.social-icons {
-    margin: 30px auto;
-    text-align: center;
-}
-
-.social-icons img {
-    width: 30px;
-    margin: 0 12px;
-    box-shadow: 0 0 20px 0 #7f7f7f3d;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.input-group {
-    top: 180px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-}
-
-.input-field {
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-}
-
-.submit-btn {
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: #e14177;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
     color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px;
+    color: #ffffff;
+    background-color: #e14177;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 0;
 }
 
-.check-box {
-    margin: 30px 10px 30px 0;
-}
+/* Courses 2 */
 
-span {
-    color: #777;
-    font-size: 12px;
-    bottom: 68px;
+
+/* courses */
+.view-course{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .view-course .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:1rem;
+    position: relative;
+  }
+  
+  .view-course .box img{
+    height:20rem;
+    width:100%;
+  }
+  
+  .view-course .box .amount{
     position: absolute;
-}
+    top:1rem; left:1rem;
+    font-size: 2rem;
+    padding:.5rem 1rem;
+    background:#054bb4;
+    color:#fff;
+    border-radius: .5rem;
+  }
+  
+  .view-course .box .stars i{
+    color:#054bb4;
+    font-size: 1.5rem;
+    padding:1rem 0;
+  }
+  
+  .view-course .box h3{
+    color:black;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .view-course .box p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+  }
+  
+  .view-course .icons{
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    margin-top: 1rem;
+    padding:.5rem;
+    padding-top: 1rem;
+  }
+  
+  .view-course .icons p{
+    color:#666;
+    font-size: 1.3rem;
+  }
+  
+  .view-course .icons p i{
+    padding-right: .4rem;
+    color:#e14177;
+  }
 
-#login {
-    left: 50px;
-}
 
-#register {
-    left: 450px;
-}
+
+
+
+
+
+
+
+
+
+
 
 /*----Footer----*/
         
@@ -264,3 +312,4 @@ hr {
 .footer-logo {
     flex-basis: 40%;
 }
+

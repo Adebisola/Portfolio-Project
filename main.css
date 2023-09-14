@@ -22,7 +22,7 @@ button {
 header li,a{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color:#5d6169;
     text-decoration: none;
     margin-left: 20px;
@@ -74,6 +74,17 @@ header {
 button:hover {
     background-color: #235391;
 }
+
+.search {
+    margin-left:15px;
+    width: 10x;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+/* hero section */
 .section-hero-container {
     display: flex;
     justify-content: space-between;
@@ -82,10 +93,12 @@ button:hover {
     margin: 30px 70px;
 }
 .section-hero-left {
-    /*background-color: aqua;*/
 }
+
+
+
 .section-hero-text {
-    max-width: 500px;
+    max-width: 600px;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -197,9 +210,87 @@ margin-top:30px ;
     margin-right: 25px;
 }
 
+
+/* Courses */
+
+.container {
+    margin: 0px 70px;
+}
+.section-header {
+    text-align: center;
+}
+.section-title {
+    color: black;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800px;
+}
+
+.section-tagline {
+    color: #030303;
+    line-height: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+}
+
+.row{
+    margin-top: 30px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /*background-color: #e14177;*/
+}
+.card {
+    background-color: /*#fffefe*/ #fcfcfc;
+    margin: 10px;
+
+
+}
+
+
+.card-img img {
+    width:350px;
+    height:350px;
+    transition: all 1s;
+
+}
+.card-img img:hover {
+    transform: scale(1.2);
+}
+
+.card-text h2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800px;
+}
+
+.card-text {
+    background-color: #ffffff;
+}
+.card-text button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px;
+    color: #ffffff;
+    background-color: #e14177;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 0;
+}
+
 /*--Courses--*/
         
-#courses {
+/*#courses {
     margin: 50px 70px;
 }
 
@@ -228,7 +319,7 @@ margin-top:30px ;
 .course-text button {
     margin: 30px 0;
 
-}
+} */
 
 /*--Offer--*/
         
@@ -272,7 +363,7 @@ form input {
     outline: none;
     box-shadow: none;
     box-sizing: border-box;
-    border: 2px solid #054bb4;
+    border: 1px solid #054bb4;
 }
 
 .btn-box {
@@ -290,4 +381,86 @@ form input {
     color: #ffffff;
     text-decoration: none;
 
+}
+
+textarea {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    height: 10em;
+    box-sizing: border-box;
+    border: 1px solid #054bb4;
+    outline: none;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    border-radius: 2px;
+}
+
+/*----Footer----*/
+        
+#footer {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 70px ;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #054bb4;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left-col {
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+.footer-right-col {
+    flex-basis: 35%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4 {
+    color: #e14177;
+    margin-bottom: 20px;
+}
+
+.link-title small {
+    font-size: 13px;
+    color: #777;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-logo button {
+    font-family: "Montserrat", sans-serif;
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.copyright-text,
+.footer-logo {
+    flex-basis: 40%;
 }
