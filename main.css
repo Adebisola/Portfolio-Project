@@ -26,14 +26,19 @@ header li,a{
     color:#5d6169;
     text-decoration: none;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
 header {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 10px;
-    margin: 0 70px;
+    /*margin: 0 70px;*/
+    position: fixed;
+    background-color: #ffffff;
+    top:-20px;
 }
 
 .logo {
@@ -59,6 +64,23 @@ header {
 
 .nav_links li a:hover {
     color: #054bb4;
+}
+
+
+header button {
+    background-color: #ffffff;
+    color: #e14177;
+    padding: 9px 25px;
+    border: 1px solid #054bb4 ;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #054bb4;
+    color: #ffffff;
 }
 
  button {

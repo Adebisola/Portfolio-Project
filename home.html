@@ -191,10 +191,10 @@
             <div class="contact-left-col">
                 <h1> Sign Up to Join Our<br>Learning Community</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <form>
-                    <input type="text" placeholder="Enter Name">
-                    <input type="email" placeholder="Enter Email">
-                    <textarea placeholder="Message"></textarea>
+                <form  name="frmContact" method="POST" action="home.php">
+                    <input name="txtName" type="text" id="txtName" placeholder="Enter Name">
+                    <input name="txtEmail" id="txtEmail" type="email" placeholder="Enter Email">
+                    <textarea name="txtMessage" id="txtMessage" placeholder="Message"></textarea>
                     <div class="btn-box">
                         <button class="common-btn">Send message</button>
                         <button class="common-btn">Start Free Trial</button>

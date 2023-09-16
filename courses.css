@@ -37,6 +37,7 @@ header li,a{
     color:#5d6169;
     text-decoration: none;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
 header {
@@ -155,80 +156,87 @@ header {
 
 /* courses */
 .view-course{
+    /*background-color: #235391;*/
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:24px;
     margin-top: 120px;
     margin-left: 70px;
     margin-right: 70px;
   }
   
   .view-course .box{
-    flex:1 1 30rem;
-    border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.1);
-    padding:1rem;
+    flex:1 1 300px;
+    border-radius: 8px;
+    border:3px solid rgba(0,0,0,.1);
+    padding:16px;
     position: relative;
   }
   
   .view-course .box img{
-    height:20rem;
+    height:150px;
     width:100%;
   }
   
   .view-course .box .amount{
     position: absolute;
-    top:1rem; left:1rem;
-    font-size: 2rem;
-    padding:.5rem 1rem;
+    top:16px; left:16px;
+    font-size: 15px;
+    padding:.8px 16px;
     background:#054bb4;
     color:#fff;
     border-radius: .5rem;
+    font-family: "Roboto", sans-serif;
   }
   
   .view-course .box .stars i{
-    color:#054bb4;
-    font-size: 1.5rem;
+    color:#e14177;
+    font-size: 24px;
     padding:1rem 0;
   }
   
   .view-course .box h3{
     color:black;
-    font-size: 2.5rem;
+    font-size: 30px;
     font-family: "Poppins", sans-serif;
   }
   
   .view-course .box p{
     color:#666;
-    font-size: 1.5rem;
-    padding:.5rem 0;
+    font-size: 16px;
+    padding:8px 0;
+    font-family: "Montserrat", sans-serif;
   }
   
   .view-course .icons{
     display: flex;
     justify-content: space-between;
-    border-top: .1rem solid rgba(0,0,0,.1);
-    margin-top: 1rem;
-    padding:.5rem;
-    padding-top: 1rem;
+    border-top: 0.8px solid rgba(0,0,0,.1);
+    margin-top: 16px;
+    padding:8px;
+    padding-top: 16px;
   }
   
   .view-course .icons p{
     color:#666;
-    font-size: 1.3rem;
+    font-size: 15px;
   }
   
   .view-course .icons p i{
-    padding-right: .4rem;
+    padding-right: 6px;
     color:#e14177;
   }
 
   .view-course .btn {
-    background-color: #e14177;
+    background-color: #2e5caf;
     color: #ffffff;
-    padding: 8px 15px;
+    padding: 6px 10px;
     border: none;
     border-radius: 50px;
+    margin-left: 0;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
   }
 
 
