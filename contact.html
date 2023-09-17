@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>IWE</title>
     <link rel="stylesheet" href="contact.css">
 </head>
@@ -22,6 +23,8 @@
         </nav>
         <a class="cta" href="#"><button>Signup</button></a>
     </header>
+
+    <!--Login and Registration Form-->
     <section>
         <div class="hero">
             <div class="form-box">
@@ -36,17 +39,16 @@
                     <img src="Images/twitter.png">
                 </div>
                 <form id="login" class="input-group">
-                    <input type="text" name="User id" class="input-field" placeholder="User Id" id="username" required>
+                    <input type="text" name="username" class="input-field" placeholder="User Id" id="username" required>
                     <input type="password" class="input-field" placeholder="Enter Password" id="password" required>
                     <input type="checkbox" class="check-box"> <span>Remember Password</span>
-                    <button type="submit" class="submit-btn">Log In</button>
+                    <button type="submit" class="submit-btn">Login</button>
                 </form>
                 <form id="register" class="input-group">
-                    <input type="text" class="input-field" placeholder="User Id" id="User-id" required>
-                    <input type="email" class="input-field" placeholder="Email Id" id="Email-id" required>
+                    <input type="text" class="input-field" placeholder="User Id" id="User_id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" id="Email_id" required>
                     <input type="password" class="input-field" placeholder="Enter Password" id="Password" required>
                     <input type="password" class="input-field" placeholder="Confirm Password" id="Password2" required>
-                    <small>Error message</small>
                     <input type="checkbox" class="check-box"> <span>I agree to the terms and conditions</span>
                     <button type="submit" class="submit-btn">Register</button>
                 </form>
@@ -54,6 +56,8 @@
             <div class="contact-form-img"><img src="images/signup-image.svg"></div>
         </div>
     </section>
+    
+    
     <!--Footer-->
     <section id="footer">
         <div class="container footer-row">
@@ -101,6 +105,7 @@
 
     <!--Form-->
     <script src="main.js"></script>
+    <script src="style.js"></script>
     
 </body>
 </html>
