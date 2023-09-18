@@ -1,37 +1,37 @@
 // REGISTRATION FORM
 
-window.onload = function() {
+// STORE CONTACT FROM DATA IN LOCAL STORAGE
+if(localStorage.getItem("Register")) {
+    // parse to JSON Object
 
-    // Check for LocalStorage support.
-    if (localStorage) {
-  
-      // Add an event listener for form submissions
-      document.getElementById('register').addEventListener('submit', function() {
-        // Get the value of the name field.
-        var username = document.getElementById('User_id').value;
-        var email = document.getElementById('Email_id').value;
-        var Password = document.getElementById('Password').value;
-        var Password2 = document.getElementById('Password2').value;
-  
-        // Save the name in localStorage.
-        localStorage.setItem('User_id', username);
-        localStorage.setItem('Email_id', email);
-        localStorage.setItem('Password', Password);
-        localStorage.setItem('Password2', Password2);
+    let registerUser = JSON.parse(localStorage.getItem("Register"))
 
-      });
-  
+    document.getElementById("User_id").value = registerUser.User_id
+    document.getElementById("Email_id").value = registerUser.Email_id
+    document.getElementById("Password").value = registerUser.Password
+    document.getElementById("Password2").value = registerUser.Password2
+}
+
+document.getElementById("register").addEventListener("submit", (a) => {
+    a.preventDefault()
+    let User_id = document.getElementById("User_id").value
+    let Email_id = document.getElementById("Email_id").value
+    let Password = document.getElementById("Password").value
+    let Password2 = document.getElementById("Password2").value
+
+    let registerInfo = {
+        User_id:User_id,
+        Email_id:Email_id,
+        Password:Password,
+        Password2:Password2
     }
-  
-  }
 
-  window.onload = function() {
+    // localStorage
+    localStorage.setItem("registerInfo", JSON.stringify(registerInfo))
 
-    // Retrieve the users name.
-    var username = localStorage.getItem('User_id');
-  
-    if (username != "undefined" || username != "null") {
-      document.getElementById('welcomeMessage').innerHTML = "Hello " + username + "!";
-    } else
-      document.getElementById('welcomeMessage').innerHTML = "Hello!";
-    }
+    console.log(JSON.stringify(registerInfo))
+    //localStorage.setItem("username", username)
+    //localStorage.setItem("password", password)
+
+    alert("Welcome!")
+})
