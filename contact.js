@@ -44,29 +44,3 @@
             alert("Your login details are saved in localStorage")
         })
 
-
-        
-
-
-        // VALIDATE FORM
-
-
-        /*function validlogin() {
-            let username = document.getElementById("username").value
-            let password = document.getElementById("password").value
-
-            let obj = JSON.parse(localStorage.getItem("user"))
-          
-          
-          
-            for (let i = 0; i < obj.length; i++) {
-          
-              if (obj[i].username == username && obj[i].password == password)
-          
-                {
-
-                alert("welcome");
-                }
-          }
-            }*/
-

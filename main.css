@@ -7,9 +7,7 @@
     margin: 0;
     padding: 0;
 }
-/*section {
-    margin-bottom: 120px;
-}*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -119,9 +117,6 @@ button:hover {
     flex-direction: row;
     margin: 30px 70px;
 }
-.section-hero-left {
-}
-
 
 
 .section-hero-text {
@@ -131,7 +126,19 @@ button:hover {
 }
 .section-hero-text h1 {
     margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 50px;
 }
+
+.section-hero-text p {
+    color: #050505;
+    line-height: 30px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /*.section-hero-text*/ h1 {
     color: #e14177;
     font-size: 30px;
@@ -273,7 +280,6 @@ margin-top:30px ;
 }
 
 .card {
-    background-color: /*#fffefe*/ #fcfcfc;
     margin: 15px;
 
 
@@ -317,38 +323,6 @@ margin-top:30px ;
     margin-left: 0;
 }
 
-/*--Courses--*/
-        
-/*#courses {
-    margin: 50px 70px;
-}
-
-.course-row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.course-right-col {
-    flex-basis: 50%;
-}
-
-.course-right-col img {
-    width: 100%;
-}
-
-.course-left-col {
-    flex-basis: 50%;
-}
-
-.course-text {
-    max-width: 500px;
-}
-
-.course-text button {
-    margin: 30px 0;
-
-} */
 
 /*--Offer--*/
         
@@ -429,7 +403,11 @@ textarea {
         
 #footer {
     font-family: "Montserrat", sans-serif;
-    margin: 10px 70px ;
+     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    
 }
 
 hr {
@@ -467,7 +445,7 @@ hr {
 
 .link-title small {
     font-size: 13px;
-    color: #777;
+    color: #050505;
 }
 
 .footer-info {

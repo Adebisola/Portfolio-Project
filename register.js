@@ -26,7 +26,7 @@ document.getElementById("register").addEventListener("submit", (a) => {
         Password2:Password2
     }
 
-    // localStorage
+    // Store registration data in local storage
     localStorage.setItem("registerInfo", JSON.stringify(registerInfo))
 
     console.log(JSON.stringify(registerInfo))
@@ -34,4 +34,6 @@ document.getElementById("register").addEventListener("submit", (a) => {
     //localStorage.setItem("password", password)
 
     alert("Welcome!")
+    // on a successful signup, redirect user to the home page
+    window.location.href = 'contact.html'
 })

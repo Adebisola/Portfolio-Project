@@ -159,7 +159,7 @@ header {
     /*background-color: #235391;*/
     display: flex;
     flex-wrap: wrap;
-    gap:24px;
+    gap:25px;
     margin-top: 120px;
     margin-left: 70px;
     margin-right: 70px;
@@ -173,10 +173,6 @@ header {
     position: relative;
   }
   
-  .view-course .box img{
-    height:150px;
-    width:100%;
-  }
   
   .view-course .box .amount{
     position: absolute;

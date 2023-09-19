@@ -1,0 +1,32 @@
+// Registration process
+const registrationData = {
+  user: 'user123',
+  userPassword: 'password123',
+};
+
+// Store registration data in local storage
+localStorage.setItem('registrationData', JSON.stringify(registrationData));
+
+
+// Retrieve user input (e.g., from a login form)
+const usernameInput = document.getElementById('username').value;
+const passwordInput = document.getElementById('password').value;
+
+// Retrieve stored registration data from local storage
+const storedRegistrationData = JSON.parse(localStorage.getItem('registrationData'));
+
+// Check if the stored data matches the user's input
+if (
+  storedRegistrationData &&
+  usernameInput === storedRegistrationData.user &&
+  passwordInput === storedRegistrationData.userPassword
+) {
+  // Successful login
+  alert('Login successful!');
+  // Redirect to the authenticated area or perform other actions as needed.
+  window.location.href = "index.html"
+} else {
+  // Failed login
+  alert('Invalid username or password.');
+  // You might want to clear the input fields or take other actions here.
+}

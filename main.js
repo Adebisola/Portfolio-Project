@@ -25,8 +25,6 @@ document.getElementById("contact_form").addEventListener("submit", (f) => {
     localStorage.setItem("userInfo", JSON.stringify(userInfo))
 
     console.log(JSON.stringify(userInfo))
-    //localStorage.setItem("username", username)
-    //localStorage.setItem("password", password)
-
-    alert("Thank you for your messsage")
+    
+   alert("Thank you for your messsage")
 })
