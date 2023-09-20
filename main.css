@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10px;
+    padding: 20px 10px;
     /*margin: 0 70px;*/
     position: fixed;
     background-color: #ffffff;
@@ -60,6 +60,7 @@ header {
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
+    margin-right: 10px;
     
 }
 
@@ -253,10 +254,10 @@ margin-top:30px ;
     margin-bottom: 100px;
 }
 .section-header {
-    text-align: center;
+    text-align: left;
 }
 .section-title {
-    color: black;
+    color: #e14177;
     font-size: 30px;
     line-height: 50px;
     font-family: "Roboto", sans-serif;
@@ -403,8 +404,8 @@ textarea {
         
 #footer {
     font-family: "Montserrat", sans-serif;
-     width: 100%;
-    margin-top: 10px;
+    width: 100%;
+    /*margin-top: 10px;*/
     margin-bottom: 0;
     padding: 0;
     
@@ -470,4 +471,51 @@ hr {
 .copyright-text,
 .footer-logo {
     flex-basis: 40%;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Header styles for smaller screens */
+  header {
+    padding: 20px 10px; /* Adjust padding for smaller header */
+  }
+
+  .nav_links {
+    display: none; /* Hide navigation links */
+  }
+
+  header button {
+    margin-left: 10px; /* Reduce margin for button */
+  }
+
+  /* Adjust other styles for smaller screens as needed */
+
+  /* About section styles for smaller screens */
+  #about,
+  #offer {
+    margin: 30px; /* Adjust margin for about and offer sections */
+  }
+
+  .about-left-col,
+  .about-right-col {
+    flex-basis: 100%; /* Full width for columns on smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .about-left-col img {
+    width: 80%; /* Adjust image size */
+    margin: 0 auto; /* Center image */
+  }
+
+  /* Adjust other styles for smaller screens as needed */
+
+  /* Footer styles for smaller screens */
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%; /* Full width for columns on smaller screens */
+  }
+
+  /* Adjust other styles for smaller screens as needed */
 }

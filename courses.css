@@ -73,6 +73,33 @@ header {
     color: #054bb4;
 }
 
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 70px 0px 70px;
+}
+
+.hero-text {
+    max-width: 450px;
+    text-align: right;
+}
+
+.hero-text h1 {
+    color: #e14177;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800px;
+    margin-bottom: 20px;
+
+}
+.hero-text p {
+    color: #030303;
+    line-height: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+}
 
 /* Courses  1 */
 
@@ -80,7 +107,9 @@ header {
     margin: 0px 70px;
 }
 .section-header {
-    text-align: center;
+    margin-top: 50px;
+    text-align: left;
+
 }
 .section-title {
     color: black;
@@ -94,7 +123,7 @@ header {
     color: #030303;
     line-height: 20px;
     font-family: "Montserrat",sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .row{
@@ -118,6 +147,7 @@ header {
     width:350px;
     height:350px;
     transition: all 1s;
+    
 
 }
 .card-img img:hover {
@@ -155,12 +185,20 @@ header {
 
 
 /* courses */
+#view-course .section-title {
+    margin-top: 120px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #030303;
+
+}
 .view-course{
-    /*background-color: #235391;*/
     display: flex;
     flex-wrap: wrap;
     gap:25px;
-    margin-top: 120px;
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -178,8 +216,8 @@ header {
     position: absolute;
     top:16px; left:16px;
     font-size: 15px;
-    padding:.8px 16px;
-    background:#054bb4;
+    padding:.10px 8px;
+    background:#e14177;
     color:#fff;
     border-radius: .5rem;
     font-family: "Roboto", sans-serif;
@@ -193,7 +231,7 @@ header {
   
   .view-course .box h3{
     color:black;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
   }
   
@@ -251,7 +289,7 @@ header {
         
 #footer {
     font-family: "Montserrat", sans-serif;
-    margin: 60px 70px ;
+    margin: 60px 70px 0 70px ;
 }
 hr {
     width: 100%;

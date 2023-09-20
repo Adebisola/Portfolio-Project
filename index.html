@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IWE</title>
     <link rel="stylesheet" href="main.css">
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 <body>
     <!--header-->
@@ -15,13 +28,15 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#courses">Courses</a></li>
+                <li><a href="signin.html">Courses</a></li>
                 <li><a href="#offer">Offer</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a class="cta" href="contact.html"><button>Signup</button></a>
-        <img  class="search" src="images/search.png">
+        <a class="cta" href="signin.html"><button>Signup</button></a>
+        <!-- User greeting message-->
+        <p>Hello, <span id="userGreeting"></span>!</p>
+        <!--<img  class="search" src="images/search.png">-->
     </header>
 
     <!--hero-->
@@ -77,7 +92,7 @@
             </div>
         </div>
         <div class="feature-btn">
-            <a href="courses.html"><button class="common-btn">Start Free Trial</button></a>
+            <a href="signin.html"><button class="common-btn">Start Free Trial</button></a>
         </div>
     </section>
     
@@ -164,7 +179,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam a ducimus ullam suscipit, itaque error obcaecati illum eos, voluptate doloremque vel, consequatur debitis maiores. Dolorem, vel dignissimos. Commodi, fugiat sint? dolor.Dolorem
                     Lorem ipsut, ad finum vitae!
                 </p>
-                <a href="courses.html"><button class="common-btn">Start Free Trial</button></a>
+                <a href="signin.html"><button class="common-btn">Start Free Trial</button></a>
             </div>
         </div>
     </section>
@@ -175,13 +190,13 @@
             <div class="contact-left-col">
                 <h1> Sign Up to Join Our<br>Learning Community</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <form  name="frmContact" id="contact_form">
+                <form  action="contactMessage.php" method="post" name="frmContact" id="contact_form">
                     <input name="txtName" type="text" id="txtName" placeholder="Enter Name">
                     <input name="txtEmail" id="txtEmail" type="email" placeholder="Enter Email">
                     <textarea name="txtMessage" id="txtMessage" placeholder="Message"></textarea>
                     <div class="btn-box">
                         <button class="common-btn">Send message</button>
-                        <button class="common-btn">Start Free Trial</button>
+                        <button  class="common-btn">Start Free Trial</button>
 
                     </div>
                 </form>
@@ -235,6 +250,12 @@
             </div>
         </div>
     </section>
-    <script src="main.js"></script>
+    <script src="main.js">
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+    <script src="validation.js"></script>
 </body>
 </html>
