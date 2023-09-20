@@ -1,39 +1,3 @@
-// STORE CONTACT FROM DATA IN LOCAL STORAGE
-/*if(localStorage.getItem("userInfo")) {
-    // parse to JSON Object
-
-    let objInfo = JSON.parse(localStorage.getItem("userInfo"))
-
-    document.getElementById("txtName").value = objInfo.name
-    document.getElementById("txtEmail").value = objInfo.email
-    document.getElementById("txtMessage").value = objInfo.message
-}
-
-document.getElementById("contact_form").addEventListener("submit", (f) => {
-    f.preventDefault()
-    let name = document.getElementById("txtName").value
-    let email = document.getElementById("txtEmail").value
-    let message = document.getElementById("txtMessage").value
-
-    let userInfo = {
-        name:name,
-        email:email,
-        message:message
-    }
-
-    // localStorage
-    localStorage.setItem("userInfo", JSON.stringify(userInfo))
-
-    console.log(JSON.stringify(userInfo))
-    
-   alert("Thank you for your messsage")
-})
-function myFunction() {
-    document.getElementById("contact").reset();
-  }*/
-
-
-
   // Get references to the form elements
 const form = document.getElementById("contact_form");
 const txtName = document.getElementById("txtName");
@@ -81,9 +45,6 @@ if (usernameExists) {
     alert("This username has already been used. Please choose a different username.");
     return; // Exit the function and prevent form submission
 }
-
-
-
     // Add the new form data to the existing data
     storedData.push(formData);
 

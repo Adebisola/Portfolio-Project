@@ -51,8 +51,7 @@ header {
 .logo {
     cursor: pointer;
     width: 150px;
-    height: auto;
-    background: none;
+    height: 100px;
     margin-right: auto;
 }
 
@@ -272,16 +271,6 @@ header {
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
   }
-
-
-
-
-
-
-
-
-
-
 
 
 
