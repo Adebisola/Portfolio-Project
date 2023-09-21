@@ -71,7 +71,7 @@ document.getElementById("login").addEventListener("submit", (e) => {
             // Successful login
             alert("Welcome " + username + " !" );
             // You can redirect the user to another page or perform other actions here.
-            window.location.href = "\Portfolio-Project/courses.html"
+            window.location.href = "\courses.html"
         } else {
             // Invalid login
             alert("Invalid username or password.");
