@@ -133,9 +133,9 @@ button:hover {
 
 .section-hero-text p {
     color: #050505;
-    line-height: 30px;
+    line-height: 40px;
     font-family: "Montserrat",sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -238,89 +238,38 @@ margin-top:30px ;
     justify-content: center;
 }
 
-.feature-btn .line {
-    text-align: right;
-    display: inline-block;
-    margin-right: 25px;
+/*--Courses--*/
+        
+#courses {
+    padding: 100px 0;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-
-/* Courses */
-
-.container {
-    margin: 0px 70px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.section-header {
-    text-align: left;
-}
-.section-title {
-    color: #e14177;
-    font-size: 30px;
-    line-height: 50px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800px;
-}
-
-.section-tagline {
-    color: #030303;
-    line-height: 20px;
-    font-family: "Montserrat",sans-serif;
-    font-size: 20px;
-}
-
-.row{
-    margin-top: 30px;
-    width:100%;
+.course-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.card {
-    margin: 15px;
-
-
+.course-right-col {
+    flex-basis: 60%;
 }
 
-
-.card-img img {
-    width:350px;
-    height:350px;
-    transition: all 1s;
-
-}
-.card-img img:hover {
-    transform: scale(1.2);
+.course-right-col img {
+    width: 100%;
 }
 
-.card-text h2 {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    line-height: 50px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800px;
+.course-left-col {
+    flex-basis: 40%;
 }
 
-.card-text {
-    background-color: #ffffff;
+.course-text {
+    max-width: 400px;
 }
-.card-text button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 9px 15px;
-    color: #ffffff;
-    background-color: #e14177;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-left: 0;
+
+.course-text button {
+    margin: 30px 0;
 }
 
 
@@ -408,6 +357,7 @@ textarea {
     margin-bottom: 0;
     padding: 0;
     
+    
 }
 
 hr {
@@ -421,6 +371,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .footer-left-col {

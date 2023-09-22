@@ -16,7 +16,7 @@ document.getElementById("login").addEventListener("submit", (e) => {
     // Save login data in local storage
     localStorage.setItem("loginData", JSON.stringify(loginData));
 
-    alert("Login data saved in local storage.");
+    alert("Login successful.");
 });
 
 
@@ -43,7 +43,7 @@ document.getElementById("register").addEventListener("submit", (e) => {
     // Save registration data in local storage
     localStorage.setItem("registrationData", JSON.stringify(registrationData));
 
-    alert("Registration data saved in local storage.");
+    alert("Registration completed.");
     window.location.href = window.location.href;
 });
 
@@ -89,7 +89,9 @@ document.getElementById("login").addEventListener("submit", (e) => {
 
 
 
+
 // CHECK USER SIGNIN STATUS
+
 // Check if login data is stored in local storage
 let storedLoginData = JSON.parse(localStorage.getItem("loginData"));
 

@@ -50,8 +50,8 @@ header {
 
 .logo {
     cursor: pointer;
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 80px;
     margin-right: auto;
 }
 
@@ -106,15 +106,15 @@ header {
     margin: 0px 70px;
 }
 .section-header {
-    margin-top: 50px;
-    text-align: left;
+    margin-top: 40px;
+    left:50px;
 
 }
 .section-title {
     color: black;
     font-size: 30px;
     line-height: 50px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800px;
 }
 
@@ -125,20 +125,26 @@ header {
     font-size: 18px;
 }
 
+.section-body {
+    width: 100%;
+}
+
 .row{
     margin-top: 30px;
     width:100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     /*background-color: #e14177;*/
 }
 .card {
-    background-color: /*#fffefe*/ #fcfcfc;
-    margin: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
 
-
+.card-img a {
+    position: relative;
 }
 
 
@@ -149,35 +155,21 @@ header {
     
 
 }
-.card-img img:hover {
-    transform: scale(1.2);
-}
+
+.card-text {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
 .card-text h2 {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 30px;
     line-height: 50px;
     font-family: "Roboto", sans-serif;
     font-weight: 800px;
-}
-
-.card-text {
-    background-color: #ffffff;
-}
-.card-text button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 9px 15px;
-    color: #ffffff;
-    background-color: #e14177;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-left: 0;
+    
 }
 
 /* Courses 2 */
@@ -278,8 +270,14 @@ header {
         
 #footer {
     font-family: "Montserrat", sans-serif;
-    margin: 60px 70px 0 70px ;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+    
+    
 }
+
 hr {
     width: 100%;
     border: 0;
@@ -291,6 +289,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .footer-left-col {
@@ -315,7 +315,7 @@ hr {
 
 .link-title small {
     font-size: 13px;
-    color: #777;
+    color: #050505;
 }
 
 .footer-info {
@@ -332,11 +332,12 @@ hr {
 
 .footer-logo button {
     font-family: "Montserrat", sans-serif;
-    padding: 12px 40px;
-    margin-top: 20px;
+    padding: 12px 38px;
+    margin-top: 10px;
     font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
     text-decoration: none;
-    margin-left: 20px;
     padding: 9px 25px;
     color: #ffffff;
     background-color: #e14177;
@@ -344,11 +345,9 @@ hr {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    font-weight: 500px;
 }
 
 .copyright-text,
 .footer-logo {
     flex-basis: 40%;
 }
-
