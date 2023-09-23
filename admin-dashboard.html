@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-dashboard-styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses" class="dashboard-section">
+            <h2>Courses</h2>
+            <!-- Course-related content goes here -->
+        </section>
+
+        <section id="students" class="dashboard-section">
+            <h2>Students</h2>
+            <!-- Student-related content goes here -->
+        </section>
+
+        <section id="instructors" class="dashboard-section">
+            <h2>Instructors</h2>
+            <!-- Instructor-related content goes here -->
+        </section>
+
+        <section id="reports" class="dashboard-section">
+            <h2>Reports</h2>
+            <!-- Reporting content goes here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 IWE Admin Dashboard</p>
+    </footer>
+
+    <script src="script.js">
+        // JavaScript code for interactivity
+
+// Code for loading course data
+function loadCourseData() {
+    const courseSection = document.getElementById('courses');
+    courseSection.innerHTML = '<h2>Courses</h2>';
+    // Fetch and display course data here
+}
+
+// Code for loading student data
+function loadStudentData() {
+    const studentSection = document.getElementById('students');
+    studentSection.innerHTML = '<h2>Students</h2>';
+    // Fetch and display student data here
+}
+
+// Code for loading instructor data
+function loadInstructorData() {
+    const instructorSection = document.getElementById('instructors');
+    instructorSection.innerHTML = '<h2>Instructors</h2>';
+    // Fetch and display instructor data here
+}
+
+// Code for loading report data
+function loadReportData() {
+    const reportSection = document.getElementById('reports');
+    reportSection.innerHTML = '<h2>Reports</h2>';
+    // Fetch and display report data here
+}
+
+// Load initial data on page load
+loadCourseData();
+loadStudentData();
+loadInstructorData();
+loadReportData();
+
+    </script>
+</body>
+</html>
