@@ -36,8 +36,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding: 20px 10px;*/
-    /*margin: 0 70px;*/
     position: fixed;
     background-color: #ffffff;
     margin-top: 10px;
@@ -49,20 +47,16 @@ header {
     cursor: pointer;
     width: 80px;
     height: 80px;
-    margin-right: auto;
-    border-radius: 30%;
+    margin-right: 20px;
 }
 
 .nav_links {
     list-style: none;
-    
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
-    margin-right: 10px;
-    
+    padding: 0px 20px;  
 }
 
 .nav_links li a {
@@ -80,6 +74,7 @@ header button {
     padding: 9px 25px;
     border-radius: 50px;
     cursor: pointer;
+    margin-left: -20px;
     transition: all 0.3s ease 0s;
 }
 
@@ -428,47 +423,100 @@ hr {
 
 
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  /* Header styles for smaller screens */
-  header {
-    padding: 20px 10px; /* Adjust padding for smaller header */
-  }
+/* Mobile Styles */
+@media (max-width: 767px) {
+    /* Header Styles */
+    header {
+        margin-top: 0; /* Adjust the margin for mobile header */
+        position: static;
+    }
+    .logo {
+        width: 60px; /* Adjust logo size for mobile */
+        height: 60px;
+        margin-right: 10px; /* Adjust margin for mobile */
+    }
+    .nav_links {
+        display: none; /* Hide navigation links for mobile */
+    }
+    header button {
+        margin-left: 0; /* Adjust margin for mobile */
+    }
 
-  .nav_links {
-    display: none; /* Hide navigation links */
-  }
+    /* Hero Section Styles */
+    .section-hero-container {
+        flex-direction: column-reverse; /* Stack elements vertically for mobile */
+        margin: 20px; /* Adjust margin for mobile */
+    }
+    .section-hero-text h1 {
+        font-size: 24px; /* Adjust font size for mobile */
+        line-height: 36px;
+    }
+    .section-hero-text p {
+        font-size: 14px; /* Adjust font size for mobile */
+        line-height: 24px;
+    }
+    .common-btn {
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
 
-  header button {
-    margin-left: 10px; /* Reduce margin for button */
-  }
+    /* About Section Styles */
+    #about, #offer {
+        margin: 20px; /* Adjust margin for mobile */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-left-col img {
+        width: 100%; /* Adjust image width for mobile */
+    }
+    .about-right-col {
+        text-align: left; /* Adjust text alignment for mobile */
+    }
+    .about-text h2 {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+    .about-text h3 {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
 
-  /* Adjust other styles for smaller screens as needed */
+    /* Features Section Styles */
+    #features {
+        padding: 20px 0; /* Adjust padding for mobile */
+    }
+    .feature-row {
+        flex-direction: column-reverse; /* Stack features vertically for mobile */
+    }
+    .feature-col {
+        text-align: center;
+        margin-bottom: 20px; /* Adjust margin for mobile */
+    }
 
-  /* About section styles for smaller screens */
-  #about,
-  #offer {
-    margin: 30px; /* Adjust margin for about and offer sections */
-  }
+    /* Courses Section Styles */
+    #courses {
+        padding: 50px 0; /* Adjust padding for mobile */
+    }
+    .course-row {
+        flex-direction: column-reverse; /* Stack courses vertically for mobile */
+    }
+    .course-right-col img {
+        width: 100%; /* Adjust image width for mobile */
+    }
+    .course-text button {
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
 
-  .about-left-col,
-  .about-right-col {
-    flex-basis: 100%; /* Full width for columns on smaller screens */
-    text-align: center; /* Center text for smaller screens */
-  }
-
-  .about-left-col img {
-    width: 80%; /* Adjust image size */
-    margin: 0 auto; /* Center image */
-  }
-
-  /* Adjust other styles for smaller screens as needed */
-
-  /* Footer styles for smaller screens */
-  .footer-left-col,
-  .footer-right-col {
-    flex-basis: 100%; /* Full width for columns on smaller screens */
-  }
-
-  /* Adjust other styles for smaller screens as needed */
+    /* Contact Section Styles */
+    #contact {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+    .contact-row {
+        flex-direction: column; /* Stack contact items vertically for mobile */
+    }
+    form {
+        max-width: 100%; /* Adjust form width for mobile */
+    }
+    textarea {
+        height: 150px; /* Adjust textarea height for mobile */
+    }
 }
+
+/* Add more media queries as needed for different screen sizes */

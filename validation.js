@@ -1,27 +1,3 @@
-// STORE LOGIN DATA IN LOCAL STORAGE
-// Add an event listener to the login form
-document.getElementById("login").addEventListener("submit", (e) => {
-    e.preventDefault();
-    
-    // Retrieve the user's input
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-
-    // Create an object to store login data
-    let loginData = {
-        username: username,
-        password: password
-    };
-
-    // Save login data in local storage
-    localStorage.setItem("loginData", JSON.stringify(loginData));
-
-    alert("Login successful.");
-});
-
-
-
-
 // STORE REGISTRATION FORM DATA IN LOCAL STORAGE
 // Add an event listener to the registration form
 document.getElementById("register").addEventListener("submit", (e) => {
@@ -45,6 +21,30 @@ document.getElementById("register").addEventListener("submit", (e) => {
 
     alert("Registration completed.");
     window.location.href = window.location.href;
+});
+
+
+
+
+// STORE LOGIN DATA IN LOCAL STORAGE
+// Add an event listener to the login form
+document.getElementById("login").addEventListener("submit", (e) => {
+    e.preventDefault();
+    
+    // Retrieve the user's input
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    // Create an object to store login data
+    let loginData = {
+        username: username,
+        password: password
+    };
+
+    // Save login data in local storage
+    localStorage.setItem("loginData", JSON.stringify(loginData));
+
+    alert("Login successful.");
 });
 
 
@@ -103,9 +103,8 @@ if (storedLoginData && storedLoginData.username) {
     // Display the username in the greeting
     document.getElementById("userGreeting").textContent = username;
 
-    // Optionally, you can hide the login form or provide a logout option
     // Hide the login form (assuming the form has an id of "loginForm")
-    document.getElementById("login").style.display = "none";
+    //document.getElementById("login").style.display = "none";
 }
 
 
