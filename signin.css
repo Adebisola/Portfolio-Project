@@ -191,80 +191,10 @@ span {
     left: 450px;
 }
 
-/*----Footer----*/
-        
-#footer {
-    font-family: "Montserrat", sans-serif;
-    margin: 60px 70px ;
-}
-hr {
-    width: 100%;
-    border: 0;
-    border-top: 1px solid #054bb4;
-}
 
-.footer-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-left-col {
-    flex-basis: 50%;
-    margin-top: 60px;
-}
-
-.footer-right-col {
-    flex-basis: 35%;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.link-title h4 {
-    color: #e14177;
-    margin-bottom: 20px;
-}
-
-.link-title small {
-    font-size: 13px;
-    color: #777;
-}
-
-.footer-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-
-
-.footer-logo img {
-    width: 100px;
-}
-
-.footer-logo button {
-    font-family: "Montserrat", sans-serif;
-    padding: 12px 40px;
-    margin-top: 20px;
-    font-size: 12px;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 9px 25px;
-    color: #ffffff;
-    background-color: #e14177;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-weight: 500px;
-}
-
-.copyright-text,
-.footer-logo {
-    flex-basis: 40%;
+/* Media query for screens with a maximum width of 767px (typical mobile screens) */
+@media (max-width: 767px) {
+    .contact-form-img {
+        display: none;
+    }
 }
