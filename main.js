@@ -29,7 +29,7 @@ form.addEventListener("submit", function (e) {
 
 
     // Check if the email address has already been used
- const emailExists = storedData.some(data => data.email === email);
+ /*const emailExists = storedData.some(data => data.email === email);
 
  if (emailExists) {
      alert("This email address has already been used. Please use a different email address.");
@@ -44,7 +44,7 @@ const usernameExists = storedData.some(data => data.name.trim() === username);
 if (usernameExists) {
     alert("This username has already been used. Please choose a different username.");
     return; // Exit the function and prevent form submission
-}
+}*/
     // Add the new form data to the existing data
     storedData.push(formData);
 

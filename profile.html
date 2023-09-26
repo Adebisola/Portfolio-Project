@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile-container">
+        <section class="profile-info">
+            <img src="images/Profile-pic.jpg" alt="User Avatar">
+            <h1>User's Name</h1>
+            <p>Email: user@example.com</p>
+            <p>Courses Enrolled in</p>
+        </section>
+        <section class="profile-content">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nisl sed ligula bibendum fringilla. Vestibulum nec dolor venenatis, consequat justo et, sollicitudin massa.</p>
+        </section>
+        <section class="profile-courses">
+            <h2>Your Courses</h2>
+            <div class="course-card">
+                <img src="images/web_design-thumbnail.jpg" alt="Course Image">
+                <h3>Course Title</h3>
+                <p>Instructor: Jane Doe</p>
+                <p class="progress">Progress: 30%</p>
+                <a href="courses.html">Continue</a>
+            </div>
+            <!-- To add more course cards here -->
+        </section>
+    </main>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&family=Roboto:wght@500&display=swap');
+
+    /* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #e14177;
+    padding: 20px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #054bb4;
+}
+
+/* Style the profile container */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Style the profile info section */
+.profile-info {
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Style the profile content section */
+.profile-content {
+    flex-basis: 65%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.profile-content h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* Style the profile courses section */
+.profile-courses {
+    flex-basis: 65%;
+    padding: 20px;
+}
+
+.profile-courses h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.course-card a {
+    text-decoration: none;
+    background-color: #e14177;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.course-card a:hover {
+    background-color: #054bb4;
+}
+</style>
+</html>

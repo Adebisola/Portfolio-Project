@@ -70,7 +70,7 @@ document.getElementById("login").addEventListener("submit", (e) => {
         if (username === storedRegistrationData.User_id && password === storedRegistrationData.Password) {
             // Successful login
             alert("Welcome " + username + " !" );
-            // You can redirect the user to another page or perform other actions here.
+            // Redirect the user to another page.
             window.location.href = "\courses.html"
         } else {
             // Invalid login
@@ -102,8 +102,9 @@ if (storedLoginData && storedLoginData.username) {
 
     // Display the username in the greeting
     document.getElementById("userGreeting").textContent = username;
+    
 
-    // Hide the login form (assuming the form has an id of "loginForm")
+    // Hide the login form.
     //document.getElementById("login").style.display = "none";
 }
 
