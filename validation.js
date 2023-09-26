@@ -69,9 +69,12 @@ document.getElementById("login").addEventListener("submit", (e) => {
         // Compare the user's input with the stored registration data
         if (username === storedRegistrationData.User_id && password === storedRegistrationData.Password) {
             // Successful login
-            alert("Welcome " + username + " !" );
+            alert("Welcome " + username + " !");
+            // Store a session token or user identifier in sessionStorage
+            sessionStorage.setItem("loggedInUser", username);
             // Redirect the user to another page.
-            window.location.href = "\courses.html"
+            window.location.href = "\courses.html";
+
         } else {
             // Invalid login
             alert("Invalid username or password.");
@@ -90,7 +93,8 @@ document.getElementById("login").addEventListener("submit", (e) => {
 
 
 
-// CHECK USER SIGNIN STATUS
+
+/*// CHECK USER SIGNIN STATUS
 
 // Check if login data is stored in local storage
 let storedLoginData = JSON.parse(localStorage.getItem("loginData"));
@@ -102,12 +106,11 @@ if (storedLoginData && storedLoginData.username) {
 
     // Display the username in the greeting
     document.getElementById("userGreeting").textContent = username;
-    
+
 
     // Hide the login form.
     //document.getElementById("login").style.display = "none";
-}
-
+}*/
 
 
 

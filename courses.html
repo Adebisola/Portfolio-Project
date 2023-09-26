@@ -24,6 +24,7 @@
             </ul>
         </nav>
         <a class="cta" href="signin.html"><button>Signup</button></a>
+        <p>Hello, <span id="userGreeting" style="color:#054bb4;"></span>!</p>
 
         <img src="images/menu.svg" id="menuBtn">
     </header>
@@ -288,7 +289,19 @@
             </div>
         </div>
     </section>
+<script src="validation.js">
+    // Check if the user is logged in
+var loggedInUser = sessionStorage.getItem("loggedInUser");
 
+if (loggedInUser) {
+    // The user is logged in, you can display their username or perform other actions
+    alert("Welcome back, " + loggedInUser + "!");
+} else {
+    // The user is not logged in, handle accordingly (e.g., redirect to login page)
+    alert("Please log in to access this page.");
+    window.location.href = "signin.html"; // Redirect to the login page
+}
+</script>
     <!--Script for the sideNav Bar-->
 
     <script>
