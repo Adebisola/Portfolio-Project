@@ -12,16 +12,18 @@
     <header id="header">
         <img class="logo" src="images/IWE.png" alt="logo">
         <nav>
-            <ul class="nav_links">
+            <ul id="nav" class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="signin.html">About</a></li>
                 <li><a href="signin.html">Features</a></li>
                 <li><a href="signin.html">Courses</a></li>
                 <li><a href="signin.html">Offer</a></li>
                 <li><a href="signin.html">Contact</a></li>
+                <li id="responsive"><a href="signin.html">Signup</a></li>
             </ul>
         </nav>
         <a class="cta" href="signin.html"><button>Signup</button></a>
+        <img src="images/menu.svg" id="menuBtn">
     </header>
 
     <section id="hero">
@@ -284,6 +286,26 @@
             </div>
         </div>
     </section>
+
+    <!--Script for the sideNav Bar-->
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var nav = document.getElementById("nav");
+
+        nav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (nav.style.right == "-250px") {
+                nav.style.right = "0";
+            } else {
+                nav.style.right = "-250px";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
 
 </body>
 </html>

@@ -23,7 +23,20 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    width:450px;
+}
 
+
+ #about img {
+    width:450px;
+}
+#courses img {
+    width: 450px;
+}
+#contact img {
+    width: 450px; 
+}
 
 /* header */
 #responsive {
@@ -122,7 +135,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin: 30px 70px;
+    margin: 90px 90px;
 }
 
 
@@ -134,7 +147,7 @@ button:hover {
 .section-hero-text h1 {
     margin-bottom: 30px;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 50px;
 }
 
@@ -142,13 +155,13 @@ button:hover {
     color: #050505;
     line-height: 40px;
     font-family: "Montserrat",sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 /*.section-hero-text*/ h1 {
     color: #e14177;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 50px;
     font-family: "Roboto", sans-serif;
     font-weight: 800px;
@@ -169,7 +182,7 @@ margin-top:30px ;
         
 #about,
 #offer {
-    margin: 50px 70px;
+    margin: 50px 100px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -254,26 +267,15 @@ margin-top:30px ;
         
 #courses {
     padding: 100px 0;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .course-row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.course-right-col {
-    flex-basis: 60%;
-}
-
-.course-right-col img {
-    width: 100%;
-}
-
-.course-left-col {
-    flex-basis: 40%;
+    justify-content: space-between;
 }
 
 .course-text {
@@ -297,7 +299,7 @@ margin-top:30px ;
 /*--Contact--*/
 
 #contact {
-    padding: 70px;
+    padding: 100px;
 }
         
 .contact-row {
@@ -306,11 +308,6 @@ margin-top:30px ;
     flex-wrap: wrap;
     justify-content: space-between;
 
-}
-
-.contact-left-col,
-.contact-right-col {
-    flex-basis: 50%;
 }
 
 

@@ -76,11 +76,6 @@ header {
 /* contact */
 .hero {
     height: 100%;
-    margin: 30px 70px;
-    /*  using linear gradient because we will add one layer over the background image */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -193,7 +188,7 @@ span {
 
 
 /* Media query for screens with a maximum width of 767px (typical mobile screens) */
-@media (max-width: 767px) {
+@media only screen and  (max-width: 767px) {
     .contact-form-img {
         display: none;
     }
