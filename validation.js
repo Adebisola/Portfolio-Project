@@ -44,7 +44,7 @@ document.getElementById("login").addEventListener("submit", (e) => {
     // Save login data in local storage
     localStorage.setItem("loginData", JSON.stringify(loginData));
 
-    alert("Login successful.");
+    /*alert("Login successful.");*/
 });
 
 

@@ -62,3 +62,19 @@ footer {
     padding: 10px 0;
 }
 
+/* instructor page */
+th {
+    color:#333;
+    font-family: "Montserrat", sans-serif;
+}
+.instructor-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructor-table {
+    width: 90%;
+    margin: 10px auto;
+}

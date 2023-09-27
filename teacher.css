@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&family=Roboto:wght@500&display=swap');
+
+.teacher{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  #teacher-section-title h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 800px;
+    margin-top: 100px;
+    text-align: center;
+    color: #054bb4;
+  }
+
+  .teacher .box{
+    flex:1 1 250px;
+    border-radius: 8px;
+    border:3px solid rgba(0,0,0,.1);
+    padding:16px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .teacher img {
+    width: 100px;
+    border-radius: 50%;
+  }
+ 
+  
+  
+  .teacher .box h3{
+    color:black;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .teacher .box p{
+    color:#666;
+    font-size: 14px;
+    padding:8px 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .teacher span {
+    color:#e14177;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+  }

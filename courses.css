@@ -176,11 +176,12 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /*background-color: #e14177;*/
+    background-color: #fcfcfc;
 }
 .card {
     position: relative;
     margin-bottom: 10px;
+    
 }
 
 .card-img a {
@@ -189,9 +190,12 @@ button:hover {
 
 
 .card-img img {
-    width:350px;
-    height:350px;
+    width:300px;
+    height:300px;
     transition: all 1s;
+    
+    padding: 15px;
+    border-radius: 20px;
     
 
 }
@@ -235,7 +239,7 @@ button:hover {
   }
   
   .view-course .box{
-    flex:1 1 300px;
+    flex:1 1 250px;
     border-radius: 8px;
     border:3px solid rgba(0,0,0,.1);
     padding:16px;
