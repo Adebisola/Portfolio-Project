@@ -78,3 +78,20 @@ th {
     width: 90%;
     margin: 10px auto;
 }
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements on smaller screens */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    main {
+        margin: 10px 5%;
+    }
+}
