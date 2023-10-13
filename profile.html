@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="main.css">
     <title>User Profile</title>
 </head>
 <body>
-    <header>
+    <!--header-->
+    <header id="header">
+        <img class="logo" src="images/favicon-96x96.png" alt="logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Logout</a></li>
+            <ul id="nav" class="nav_links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin-signin.html">Admin</a></li>
+                <li><a href="teacher.html">Teachers</a></li>
+                <li id="responsive"><a href="signin.html">Signup</a></li>
             </ul>
         </nav>
+        <a class="cta" href="signin.html"><button>Signup</button></a>
+        <img src="images/menu.svg" id="menuBtn">
     </header>
     <main class="profile-container">
         <section class="profile-info">
@@ -39,6 +46,21 @@
                 <p class="progress">Progress: 30%</p>
                 <a href="courses.html">Continue</a>
             </div>
+            <div class="course-card">
+                <img src="images/public_speakingThumbnail.jpg" alt="Course Image">
+                <h3>Course Title</h3>
+                <p>Instructor: Wunmi Matthew</p>
+                <p class="progress">Progress: 50%</p>
+                <a href="courses.html">Continue</a>
+            </div>
+            <div class="course-card">
+                <img src="images/web_dev-thumbnail.jpg" alt="Course Image">
+                <h3>Course Title</h3>
+                <p>Instructor: John Doe</p>
+                <p class="progress">Progress: 10%</p>
+                <a href="courses.html">Continue</a>
+            </div>
+            
             <!-- To add more course cards here -->
         </section>
     </main>
